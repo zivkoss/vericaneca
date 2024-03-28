@@ -5,7 +5,15 @@ We found the defects and than solve them.
 
 java practis code 
 
- double grade1 = 3.5;
+====================================================
+====================================================
+
+import java.util.Scanner;
+
+public class HelloTester {
+    public static void main(String[] args) {
+
+        double grade1 = 3.5;
         double grade2 = 5.4;
         double grade3 = 9.9;
 
@@ -38,3 +46,6 @@ java practis code
         System.out.println("Your Total Grade is: " + student_grade);
         System.out.println("Your percentage is: " + percentage);
         */
+
+    }
+}
