@@ -2,3 +2,5 @@ red
 oranges
 yellow
 green
+blue
+purple
