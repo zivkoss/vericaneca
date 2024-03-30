@@ -53,7 +53,12 @@
 # ================
 
 
-red_bucket = "Kevin"
-del red_bucket # var. red_bucket is deleted
-print(type(red_bucket))
+# red_bucket = "Kevin"
+# del red_bucket # var. red_bucket is deleted
+# print(type(red_bucket))
+
+# =====================
+
+# red_bucket = input("What do you want to put in the bucket? ")
+# print(red_bucket)
 
