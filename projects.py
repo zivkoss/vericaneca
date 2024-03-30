@@ -64,12 +64,24 @@
 
 # =====================
 
-Thomas_Age = 10
-Age_at_Kindergarten = 5
+# Thomas_Age = 10
+# Age_at_Kindergarten = 5
 
-if Thomas_Age < Age_at_Kindergarten:
-    print("Thimas should be in pre-school")
-elif Thomas_Age == Age_at_Kindergarten:
-    print("Enjoy kindergarten")    
-else:
-    print("Thomas sholud be in kindergarten or another class")    
+# if Thomas_Age < Age_at_Kindergarten:
+#     print("Thimas should be in pre-school")
+# elif Thomas_Age == Age_at_Kindergarten:
+#     print("Enjoy kindergarten")    
+# else:
+#     print("Thomas sholud be in kindergarten or another class")    
+
+
+# ===========================
+
+def print_kevin():
+    text = "Kevin Stratvert has a great chanel"
+    print(text)
+    print(text)
+    print(text)
+
+print_kevin()    
+
