@@ -52,5 +52,8 @@
 
 # ================
 
+
 red_bucket = "Kevin"
+del red_bucket
 print(type(red_bucket))
+
