@@ -12,10 +12,26 @@
 
 
 # ==================================================================
+# 1.solution======
+# from PyDictionary import PyDictionary
+
+# dictionary = PyDictionary()
+
+# word = input("Enter your word: ")
+# print(dictionary.meaning(word))
+
+# 2.solution
+
 
 from PyDictionary import PyDictionary
 
 dictionary = PyDictionary()
 
-word = input("Enter your word: ")
-print(dictionary.meaning(word))
+
+while True:
+    word = input("Enter your word: ")
+    if word == "":
+        break
+    print(dictionary.meaning(word))
+
+
