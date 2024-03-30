@@ -60,5 +60,10 @@ public class HelloTester {
 //       i++;
         i--;
        System.out.println("New i = " + i);
+
+
+       //System.out.println("New i = " + i++);
+       //System.out.println("New i = " + ++i);
+
     }
 }
