@@ -108,11 +108,20 @@
 # ============
 
 # while     
-x=0
-while (x<5):
-    print(x)
-    x=x+1
-    
+
+# x=0
+# while (x<5):
+#     print(x)
+#     x=x+1
+    # ======================
 # for
-    for x in range(5,10):
-        print(x)    
+# for x in range(5,10):
+#         print(x)    
+
+# ==================================
+
+days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+
+for d in days:
+    if(d=="Thu"):break
+    print(d)
