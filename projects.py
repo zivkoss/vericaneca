@@ -43,3 +43,14 @@
 
 # print(dictionary.getMeanings())
 
+# =====================================
+# print(5/7)
+
+# red_bucket = "Kevin"
+# red_bucket = 10
+# print(red_bucket)
+
+# ================
+
+red_bucket = "Kevin"
+print(type(red_bucket))
