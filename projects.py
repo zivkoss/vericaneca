@@ -77,11 +77,20 @@
 
 # ===========================
 
-def print_kevin():
-    text = "Kevin Stratvert has a great chanel"
-    print(text)
-    print(text)
-    print(text)
+# def print_kevin():
+#     text = "Kevin Stratvert has a great chanel"
+#     print(text)
+#     print(text)
+#     print(text)
 
-print_kevin()    
+# print_kevin()    
 
+def school_age_calculator(age,name):
+    if age < 5:
+       print("Enjoy the tim!", name, "is only", age)
+    elif age == 5:
+       print("Enjoy kindergarten,", name)
+    else:
+       print("They grow so fast")
+
+school_age_calculator(10,"Thomas")              
