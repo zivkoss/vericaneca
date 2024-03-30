@@ -54,6 +54,6 @@
 
 
 red_bucket = "Kevin"
-del red_bucket
+del red_bucket # var. red_bucket is deleted
 print(type(red_bucket))
 
