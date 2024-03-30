@@ -93,4 +93,4 @@ def school_age_calculator(age,name):
     else:
        print("They grow so fast")
 
-school_age_calculator(10,"Thomas")              
+school_age_calculator(5,"Thomas")              
