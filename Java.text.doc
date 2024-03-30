@@ -57,11 +57,9 @@ public class HelloTester {
 
        int i = 5;
        System.out.println("Old i = " + i);
-//       i++;
-        i--;
-       System.out.println("New i = " + i);
-
-
+       //i++;
+       //i--;
+       //System.out.println("New i = " + i);
        //System.out.println("New i = " + i++);
        //System.out.println("New i = " + ++i);
 
