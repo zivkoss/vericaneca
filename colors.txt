@@ -3,4 +3,4 @@ oranges
 yellow
 green
 blue
-purple
+indigo
