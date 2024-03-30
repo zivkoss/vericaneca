@@ -23,15 +23,23 @@
 # 2.solution
 
 
-from PyDictionary import PyDictionary
+# from PyDictionary import PyDictionary
 
-dictionary = PyDictionary()
+# dictionary = PyDictionary()
 
 
-while True:
-    word = input("Enter your word: ")
-    if word == "":
-        break
-    print(dictionary.meaning(word))
+# while True:
+#     word = input("Enter your word: ")
+#     if word == "":
+#         break
+#     print(dictionary.meaning(word))
 
+# 3.solution
+
+# from PyDictionary import PyDictionary
+
+# dictionary = PyDictionary("eyes", "indentation", "head")
+
+
+# print(dictionary.getMeanings())
 
