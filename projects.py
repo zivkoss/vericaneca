@@ -123,5 +123,5 @@
 days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 for d in days:
-    if(d=="Thu"):break
+    if(d=="Sun"):break
     print(d)
