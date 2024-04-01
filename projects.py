@@ -123,6 +123,6 @@
 days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon1"]
 
 for d in days:
-    if(d=="Mon1"):break
+    if(d=="Thu"):break
     print(d) 
 
