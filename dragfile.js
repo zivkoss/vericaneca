@@ -69,3 +69,15 @@ function upload(file) {
 
 }
 
+// const isFile = await new Promise((resolve) => {
+//     const fr = new FileReader();
+//     fr.onprogress = (e) => {
+//         if (e.loaded > 50) {
+//             fr.abort();
+//             resolve(true);
+//         }
+//     }
+//         fr.onload = () => { resolve(true); }
+//         fr.onerror = () => { resolve(false); }
+//         fr.readAsArrayBuffer(e.dataTransfer.files[0]);     
+// });
