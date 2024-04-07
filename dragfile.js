@@ -4,8 +4,8 @@ const input = document.querySelector('input');
 
 dropzone.addEventListener('click', () => {
     input.click();
-    input.onchange = () => {
-        upload(e.target.files[0]);
+    input.onchange = (e) => {
+        upload(e.target.files);
     }
 });
 
@@ -16,9 +16,9 @@ dropzone.addEventListener('dragover', (e) => {
 dropzone.addEventListener('drop', async (e) => {
     e.preventDefault();
     // console.log("Drop");
-    if (![...e.dataTransfer.items[0]].every(item => item.kind === "file")) { // .kind !== "file"
+    if (![...e.dataTransfer.items[0]].every(item => item.kind === "file")) { 
         dropzoneMsg.textContent = "Error: Not a file or files" ;
-        throw new Error("Not a file or files");
+        throw new Error("Not a file or file");
     }
 
     // if (e.dataTransfer.items.length > 1) {
@@ -44,7 +44,6 @@ dropzone.addEventListener('drop', async (e) => {
     }));
 
    
-
     if (!areFiles.every(item => item === true)) {
         dropzoneMsg.textContent = "Error: Not a file or files (cannot ne a folder)";
         throw new Error("Couldn't read file(s)");
@@ -53,10 +52,12 @@ dropzone.addEventListener('drop', async (e) => {
     upload(filesArray[0]);
 });
 
-function upload(file) {
+function upload(files) {
     // console.log(file);
     const fd = new FormData();
-    fd.append('file', file);
+    for (let i=0; i<files.length; i++) {
+        fd.append(`file${i+1}`, files[i]);
+    } 
 
     dropzoneMsg.textContent = "Uploading...";
 
