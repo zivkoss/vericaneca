@@ -16,9 +16,9 @@ dropzone.addEventListener('dragover', (e) => {
 dropzone.addEventListener('drop', async (e) => {
     e.preventDefault();
     // console.log("Drop");
-    if (![...e.dataTransfer.items[0]].every(item => item.kind === "file")) { 
+    if (![...e.dataTransfer.items].every(item => item.kind === "file")) { 
         dropzoneMsg.textContent = "Error: Not a file or files" ;
-        throw new Error("Not a file or file");
+        throw new Error("Not a file or files");
     }
 
     // if (e.dataTransfer.items.length > 1) {
