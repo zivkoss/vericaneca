@@ -16,34 +16,38 @@ dropzone.addEventListener('dragover', (e) => {
 dropzone.addEventListener('drop', async (e) => {
     e.preventDefault();
     // console.log("Drop");
-    if (e.dataTransfer.items[0].kind !== "file") {
-        dropzoneMsg.textContent = "Error: Not a file";
-        throw new Error("Not a file");
+    if (![...e.dataTransfer.items[0]].every(item => item.kind === "file")) { // .kind !== "file"
+        dropzoneMsg.textContent = "Error: Not a file or files" ;
+        throw new Error("Not a file or files");
     }
 
-    if (e.dataTransfer.items.length > 1) {
-        dropzoneMsg.textContent = "Error: Cannot upload multiple files";
-        throw new Error("Multiple items");
-    }
+    // if (e.dataTransfer.items.length > 1) {
+    //     dropzoneMsg.textContent = "Error: Cannot upload multiple files";
+    //     throw new Error("Multiple items");
+    // }
 
     const filesArray = [...e.dataTransfer.files];
 
-    const isFile = await new Promise((resolve) => {
-        const fr = new FileReader();
-        fr.onprogress = (e) => {
-            if (e.loaded > 50) {
-                fr.abort();
-                resolve(true);
+    const areFiles = await Promise.all([...e.dataTransfer.files].map((file) => {
+        return new Promise((resolve) => {
+            const fr = new FileReader();
+            fr.onprogress = (e) => {
+                if (e.loaded > 50) {
+                    fr.abort();
+                    resolve(true);
+                }
             }
-        }
-            fr.onload = () => { resolve(true); }
-            fr.onerror = () => { resolve(false); }
-            fr.readAsArrayBuffer(e.dataTransfer.files[0]);     
-    });
+                fr.onload = () => { resolve(true); }
+                fr.onerror = () => { resolve(false); }
+                fr.readAsArrayBuffer(file);     
+        });
+    }));
 
-    if (!isFile) {
-        dropzoneMsg.textContent = "Error: Not a file (cannot ne a folder)";
-        throw new Error("Couldn't read file");
+   
+
+    if (!areFiles.every(item => item === true)) {
+        dropzoneMsg.textContent = "Error: Not a file or files (cannot ne a folder)";
+        throw new Error("Couldn't read file(s)");
     }
 
     upload(filesArray[0]);
@@ -65,19 +69,24 @@ function upload(file) {
         if (progress === 1) {
             dropzoneMsg.textContent = "Prpcessing...";
         }
-    })
+    });
+
+    req.addEventListener('load', () => {
+        if (req.status === 200) {
+            dropzoneMsg.textContent = "Success";
+            console.log(JSON.parse(req.responseText));
+        } else {
+            dropzoneMsg.textContent = 'Upload failed';
+            console.error("Bad response");
+        }
+    });
+
+    req.addEventListener('error', () => {
+        dropzoneMsg.textContent = 'Upload failed';
+        console.error("Network error");
+    });
+
+    req.send(fd);
 
 }
 
-// const isFile = await new Promise((resolve) => {
-//     const fr = new FileReader();
-//     fr.onprogress = (e) => {
-//         if (e.loaded > 50) {
-//             fr.abort();
-//             resolve(true);
-//         }
-//     }
-//         fr.onload = () => { resolve(true); }
-//         fr.onerror = () => { resolve(false); }
-//         fr.readAsArrayBuffer(e.dataTransfer.files[0]);     
-// });
