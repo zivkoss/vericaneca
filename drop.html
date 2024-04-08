@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>WiFi Registration</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1,user-scalable=yes" />
+        <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10" >
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="/portal//css/guest.structure.css" />
+        <link rel="stylesheet" href="/portal/css/guest.theme.1.css" />
+        <style>
+            .cisco-ise-header.ui-header {
+                background-image: url("") !important;
+            }
+        </style>
+        <style>
+    .ui-header {
+        
+            color: #ffffff !important;
+        
+            	background-color: #006b79 !important;
+        	
+    }
+    
+    .ui-page, .ui-content.ui-body-a, .ui-panel-content-wrap.ui-body-a {
+       
+            background-color: #006b79 !important;
+            
+            background-image: none !important;
+        	
+    }
+
+    .ui-page, .ui-body-a {
+        
+            color: #006b79 !important;
+        
+    }
+</style><script src="/portal//js/guest.app.js"></script>
+    </head>
+    <body class="cisco-ise-desktop">
+
+
+        <div data-role="page" data-theme="a" id="page-login"
+            <div data-role="header" data-theme="a" class="cisco-ise-header ui-header ui-bar-a">
+                <div class="cisco-ise-banner">
+                 <img src="/portal/portals/d70045a0-b7f2-11eb-9915-0e187e3218aa/images/TEMP_32e9d639e8d74c0eba688d01ccb7e146PortonoviLogo_White.png" id="ui_desktop_logo" class="cisco-ise cisco-ise-logo-image" alt=""/>
+<img src="/portal/portals/d70045a0-b7f2-11eb-9915-0e187e3218aa/images/TEMP_84819e2ea650430594dd27e57c95c66ePortonoviLogo_White.png" id="ui_mobile_logo" class="cisco-ise cisco-ise-logo-image" alt=""/>
+<h3 id="ui_banner_label" class="cisco-ise cisco-ise-banner-label"></h3>
+
+					  </div>
+
+
+	
+
+
+            </div>
+
+
+            <div data-role="content" data-theme="a" class="ui-content ui-body-a">
+                <div class="cisco-ise-body">
+                    <div class="cisco-ise-optional-content-1" id="ui_login_optional_content_1">
+        <style>
+div {
+}
+</style><style>
+div {
+}
+</style></div>
+<div class="cisco-ise cisco-ise-content cisco-ise-main-content ui-corner-all ui-body-a ui-shadow">
+    <noscript>
+        <p>You must turn on JavaScript to use this web site.</p>
+    </noscript>
+    <div class="cisco-ise-scriptable">
+        <h1 class="cisco-ise cisco-ise-content-header" id="ui_login_content_label">Welcome to Portonovi</h1>
+<p class="cisco-ise cisco-ise-instruction-message" id="ui_login_instruction_message">Please use login and password provided or proceed with self registration clicking &quot;Get Internet Access&quot;<br /></p>
+<div id="portallogindiv" class="cisco-ise cisco-ise-login-text ui-corner-all">
+
+        <form id="portalloginForm" name="loginForm" action="LoginSubmit.action?from=LOGIN" method="POST">
+            <input type="hidden" name="token" value="118JMZIIVGZB7ITEJI0JZTXM6O27P7SQ" />
+<input type="hidden" name="portal" value="d70045a0-b7f2-11eb-9915-0e187e3218aa">
+
+            <fieldset data-role="controlgroup" id="login_username_password">
+                    <label for="user.username">Username</label>
+                    <input type="text" name="user.username" id="user.username" value="" autocomplete="off" required />
+
+                    <label for="user.password">Password</label>
+                    <input type="password" name="user.password" id="user.password" value="" autocomplete="off" required />
+                </fieldset>
+            <div class="cisco-ise-form-buttons">
+                <input type="submit" data-theme="b" data-inline="true" data-mini="true"
+                       id="ui_login_signon_button"
+                       value="Sign On" />
+            </div>
+	</form>
+	<form name="aupView" style="display:none" action="AupView.action?from=LOGIN"
+                           target="_blank" method="post">
+		<input type="hidden" name="token" value="118JMZIIVGZB7ITEJI0JZTXM6O27P7SQ" />
+<input type="hidden" name="portal" value="d70045a0-b7f2-11eb-9915-0e187e3218aa"/>
+	</form>
+
+	<form name="selfRegForm" action="SelfRegistration.action?from=LOGIN" method="POST">
+                <input type="hidden" name="token" value="118JMZIIVGZB7ITEJI0JZTXM6O27P7SQ" />
+<div class="cisco-ise-form-buttons">
+                    <a href="#" id="ui_login_self_reg_button" class="ui-link">Get Internet Access</a>
+                </div>
+            </form>
+        </div>
+<div class="cisco-div-extender"></div>
+    </div>
+</div>
+<div class="cisco-ise-optional-content-2" id="ui_login_optional_content_2">
+        <br /></div>
+<script>
+    (function() {
+        var page = require('cisco/ise/pages/login');
+
+        page.init({
+            includeAup: 'false',
+            requireAupScroll: 'false',
+            requireAupAcceptance: 'false',
+            requiredFieldError: 'This field is required.',
+            enableRateLimit: 'false',
+            rateLimitValue: ''
+        });
+ window.postMessage({ type: "registerSession" }, "*");
+    })();
+</script>
+<div class="cisco-ise-footer">
+    <div class="cisco-ise-footer-container">
+    </div>
+</div><p class="cisco-ise-footer-text"></p>
+                    </div>
+            </div>
+<script>
+    (function(){
+        var ise = require('cisco/ise'),
+            portalSession = require('cisco/ise/portalSession');
+
+        ise.portal.setPortalSessionId('c92c5f33-833c-4618-b41a-58db65a4f9fd');
+        ise.portal.setPreviewMode('false');
+        
+        if('false' != null && 'false' === 'true'){
+            var rateLimitValue = '';
+            if(ise.portal.SESSION_IDLE_TIMEOUT != undefined && ise.portal.SESSION_IDLE_TIMEOUT != null && rateLimitValue !== '' && parseInt(rateLimitValue, 10) > 5) {			    
+                ise.portal.SESSION_IDLE_TIMEOUT = parseInt(rateLimitValue, 10) * 60 * 1000;
+            }
+        }
+        portalSession.setParams({
+            portalId: 'd70045a0-b7f2-11eb-9915-0e187e3218aa',
+            portalIdleTimeout: '',
+            sessionIdleTimeout: ise.portal.SESSION_IDLE_TIMEOUT,
+            sessionId: 'c92c5f33-833c-4618-b41a-58db65a4f9fd',
+            retryUrl: 'http://1.1.1.1',
+            
+            logoutUrl: 'Logout.action'
+        });
+        
+    })();
+</script>
+<form id="tokenForm">
+                <input type="hidden" name="token" value="118JMZIIVGZB7ITEJI0JZTXM6O27P7SQ" />
+</form>
+            <div id="portal-session-timeout-popup" class="ui-content cisco-ise-popup-error"
+     data-role="popup" data-theme="c" data-overlay-theme="b" data-position-to="window">
+    <a href="#" data-rel="back" data-role="button" data-icon="delete"
+       data-iconpos="notext" class="ui-btn-left"></a>
+    <p>Your session has timed out. Click Retry to try again.</p>
+    <a href="#" data-role="button" data-theme="b" data-inline="true"
+       id="ui_session_timeout_retry_button"
+       >Retry</a>
+</div>
+</div>
+    </body>
+</html>
