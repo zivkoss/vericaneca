@@ -45,7 +45,7 @@ dropzone.addEventListener('drop', async (e) => {
 
    
     if (!areFiles.every(item => item === true)) {
-        dropzoneMsg.textContent = "Error: Not a file or files (cannot ne a folder)";
+        dropzoneMsg.textContent = "Error: Not a file or files (cannot be a folder)";
         throw new Error("Couldn't read file(s)");
     }
 
