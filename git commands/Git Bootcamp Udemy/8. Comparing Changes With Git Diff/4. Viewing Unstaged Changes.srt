@@ -1,0 +1,243 @@
+1
+00:00:00,150 --> 00:00:04,160
+All right, so now we're going to walk through some of the different ways of using get dif, we've got
+
+2
+00:00:04,170 --> 00:00:11,940
+get diff, get dif head, get dif staged and cached and then we have get dev head with a file name,
+
+3
+00:00:11,940 --> 00:00:17,550
+get diff staged with a file name, branch names that we can use if we can commit hashes in there.
+
+4
+00:00:17,820 --> 00:00:19,500
+So there's a lot that we can cover.
+
+5
+00:00:19,680 --> 00:00:23,340
+It all follows a very similar pattern though, so it's not super difficult.
+
+6
+00:00:23,550 --> 00:00:28,340
+But I'm going to begin by making a very basic repo that we can follow along with instead of this crazy
+
+7
+00:00:28,360 --> 00:00:28,710
+one.
+
+8
+00:00:29,010 --> 00:00:29,310
+Right.
+
+9
+00:00:29,310 --> 00:00:33,930
+With all these changes and tons of files, I'm going to do just a trivial example.
+
+10
+00:00:34,050 --> 00:00:35,210
+It all works the same way.
+
+11
+00:00:35,490 --> 00:00:37,470
+So I'm not in a repo at the moment.
+
+12
+00:00:37,530 --> 00:00:43,320
+I'll admit to repo and I'm going to make a colores file colors, dot text.
+
+13
+00:00:44,190 --> 00:00:46,260
+And why not add a commit right now.
+
+14
+00:00:46,380 --> 00:00:49,530
+Get add colors, dot text, get commit.
+
+15
+00:00:49,980 --> 00:00:56,550
+We'll just do initial commit, just going to make some basic history and then here's my file.
+
+16
+00:00:56,820 --> 00:01:03,150
+So I'll add read into that file and then I'll do a commit a form which just means add everything and
+
+17
+00:01:03,150 --> 00:01:06,030
+then end for message so I don't have to add and commit.
+
+18
+00:01:07,290 --> 00:01:10,290
+I'm going to just do this very quickly and I'll probably fast forward.
+
+19
+00:01:10,690 --> 00:01:12,630
+So this one will be at orange.
+
+20
+00:01:12,660 --> 00:01:14,910
+I'm just going to build up the rainbow one commit at a time.
+
+21
+00:01:15,420 --> 00:01:17,070
+Maybe I'll do yellow and green together.
+
+22
+00:01:18,360 --> 00:01:28,770
+So this let me clear will be add yellow and green and then blue and purple.
+
+23
+00:01:31,110 --> 00:01:36,060
+So I'll do the same thing right out of message and blue and purple.
+
+24
+00:01:37,320 --> 00:01:41,070
+OK, so we've got our rainbow set up now and I have a tiny bit of history.
+
+25
+00:01:42,120 --> 00:01:43,920
+I have what five commit so far.
+
+26
+00:01:44,430 --> 00:01:47,070
+OK, that's enough for us to start using get diff.
+
+27
+00:01:47,220 --> 00:01:51,510
+So the first version I showed you, the only version is just get diff with nothing else.
+
+28
+00:01:51,870 --> 00:01:56,880
+And this will show us all the changes in our working directory that are not staged for the next commit.
+
+29
+00:01:57,300 --> 00:02:00,450
+So it compares staging and the working directory.
+
+30
+00:02:00,720 --> 00:02:04,240
+Also staging is usually referred to the index on the documentation.
+
+31
+00:02:04,250 --> 00:02:05,400
+It's just confusing.
+
+32
+00:02:05,400 --> 00:02:06,570
+Staging makes more sense.
+
+33
+00:02:07,290 --> 00:02:12,870
+So a lot of people say that right now, if I run it, there's no difference because there are no changes
+
+34
+00:02:12,870 --> 00:02:13,320
+at all.
+
+35
+00:02:13,320 --> 00:02:14,690
+There's nothing in the staging area.
+
+36
+00:02:14,700 --> 00:02:16,200
+There's nothing in the working directory.
+
+37
+00:02:16,350 --> 00:02:17,580
+Nothing has changed.
+
+38
+00:02:18,570 --> 00:02:25,530
+So if I instead do something simple like, well, what I did in the last video, if I remove purple.
+
+39
+00:02:25,980 --> 00:02:26,250
+Right.
+
+40
+00:02:26,250 --> 00:02:29,130
+And replace it as indigo.
+
+41
+00:02:30,900 --> 00:02:37,470
+Let's just save that if I type get status, we see, all right, there's something that's been modified
+
+42
+00:02:37,470 --> 00:02:41,460
+and now if I type get diff, we see an actual diff.
+
+43
+00:02:42,000 --> 00:02:47,400
+So this is showing us a comparison between what the index knows about and what the staging area has
+
+44
+00:02:47,970 --> 00:02:49,950
+versus the changes that we've made.
+
+45
+00:02:50,100 --> 00:02:55,830
+Another way of thinking about it is that the differences are what we could tell it to add to the staging
+
+46
+00:02:55,830 --> 00:02:56,160
+area.
+
+47
+00:02:56,430 --> 00:03:00,630
+So as we see here in our colors, that text file right.
+
+48
+00:03:00,630 --> 00:03:06,690
+We're comparing one file to the next first version is a second version is B, so A is what the staging
+
+49
+00:03:06,690 --> 00:03:12,450
+area knows about versus B is the changes we have in our working directory.
+
+50
+00:03:12,990 --> 00:03:15,170
+So eg it's the minus sign, right.
+
+51
+00:03:15,180 --> 00:03:16,290
+B gets the plus sign.
+
+52
+00:03:16,560 --> 00:03:23,730
+So in the version of our files that the staging area last knew about purple was still there.
+
+53
+00:03:23,880 --> 00:03:24,210
+Right.
+
+54
+00:03:24,510 --> 00:03:29,850
+That, so that mine assignments versus with the version of the file that is actually in our working
+
+55
+00:03:29,850 --> 00:03:32,850
+directory, we see that Indigo has been added.
+
+56
+00:03:33,450 --> 00:03:35,310
+So that's what the plus indicates.
+
+57
+00:03:35,430 --> 00:03:40,440
+It doesn't always mean something is new, it just means that it came from file B and in our case, file
+
+58
+00:03:40,440 --> 00:03:42,210
+B are the new changes.
+
+59
+00:03:42,520 --> 00:03:44,190
+So that's all I'll show you in this video.
+
+60
+00:03:44,190 --> 00:03:49,260
+Just to make this point one more time, get Dev on its own will list the changes in our working directory
+
+61
+00:03:49,260 --> 00:03:50,970
+that are not staged.
