@@ -112,12 +112,17 @@ const rectangle = {
   width: 20,
   heigth: 10,
   area: function () {
-    // return this.width * this.heigth;
-    return width * heigth;
+    return this.width * this.heigth;
+    // return width * heigth; // error
 
   },
 };
 
-console.log(rectangle.area());
+   console.log(rectangle.area());
 
-console.log(this);
+
+function run() {
+   console.log(this);
+}
+
+run();
