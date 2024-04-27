@@ -1,6 +1,6 @@
-setInterval(() => {
-  console.log('ГОСПОДЕ ИСУСЕ ХРИСТЕ СИНЕ БОЖИЈИ ПОМИЛУЈ МЕ ГРЕШНОГА, БОГОРОДИЦЕ ДЈЕВО РАДУЈ СЕ БЛАГОДАТНА МАРИЈО, БЛАГОСЛОВЕНА СИ ТИ МЕЂУ ЖЕНАМА И БАЛГОСЛОВЕН ЈЕ ПЛОД УТРОБЕ ТВОЈЕ, СЛАВА ГОСПОДУ',)
-}, 9000)
+// setInterval(() => {
+//   console.log('ГОСПОДЕ ИСУСЕ ХРИСТЕ СИНЕ БОЖИЈИ ПОМИЛУЈ МЕ ГРЕШНОГА, БОГОРОДИЦЕ ДЈЕВО РАДУЈ СЕ БЛАГОДАТНА МАРИЈО, БЛАГОСЛОВЕНА СИ ТИ МЕЂУ ЖЕНАМА И БАЛГОСЛОВЕН ЈЕ ПЛОД УТРОБЕ ТВОЈЕ, СЛАВА ГОСПОДУ',)
+// }, 9000)
 
 
 //   setInterval(() => {
@@ -65,41 +65,41 @@ setInterval(() => {
 //  тада ће принети на жртвеник Твој теоце.${molitva}`)
 // 	}
 
-const contacts = [
-      {
-        firstName: "Akira",
-        lastName: "Laine",
-        number: "0543236543",
-        likes: ["Pizza", "Coding", "Brownie Points"],
-      },
-      {
-        firstName: "Harry",
-        lastName: "Potter",
-        number: "0994372684",
-        likes: ["Hogwarts", "Magic", "Hagrid"],
-      },
-      {
-        firstName: "Sherlock",
-        lastName: "Holmes",
-        number: "0487345643",
-        likes: ["Intriguing Cases", "Violin"],
-      },
-      {
-        firstName: "Kristian",
-        lastName: "Vos",
-        number: "unknown",
-        likes: ["JavaScript", "Gaming", "Foxes"],
-      },
-    ];
+// const contacts = [
+//       {
+//         firstName: "Akira",
+//         lastName: "Laine",
+//         number: "0543236543",
+//         likes: ["Pizza", "Coding", "Brownie Points"],
+//       },
+//       {
+//         firstName: "Harry",
+//         lastName: "Potter",
+//         number: "0994372684",
+//         likes: ["Hogwarts", "Magic", "Hagrid"],
+//       },
+//       {
+//         firstName: "Sherlock",
+//         lastName: "Holmes",
+//         number: "0487345643",
+//         likes: ["Intriguing Cases", "Violin"],
+//       },
+//       {
+//         firstName: "Kristian",
+//         lastName: "Vos",
+//         number: "unknown",
+//         likes: ["JavaScript", "Gaming", "Foxes"],
+//       },
+//     ];
 
-    function lookUpProfile(name, prop) {
-      const contact = contacts.find((c) => c.firstName == name);
+//     function lookUpProfile(name, prop) {
+//       const contact = contacts.find((c) => c.firstName == name);
 
-      if  (!contact) return "No such contact!"
+//       if  (!contact) return "No such contact!"
 
-      if (!contact[prop]) return "No such property!"
+//       if (!contact[prop]) return "No such property!"
 
-      return contact[prop];
-    }
+//       return contact[prop];
+//     }
 
-    console.log(lookUpProfile("JavaSript", "Gaming"));
+//     console.log(lookUpProfile("JavaSript", "Gaming"));
