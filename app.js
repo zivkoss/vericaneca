@@ -128,4 +128,4 @@ const rectangle = {
   }
 };
 
-console.log(rectangle.name);
+console.log(rectangle.area());
