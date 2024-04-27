@@ -104,3 +104,12 @@
 
 //     console.log(lookUpProfile("JavaSript", "Gaming"));
 
+function Rectangle(name, width, height) {
+  this.name = name;
+  this.width = width;
+  this.height = height;
+}
+
+const rect1 =  new Rectangle('Rectangle 1', 10, 10);
+
+console.log(rect1);
