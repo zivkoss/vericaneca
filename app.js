@@ -119,25 +119,32 @@
 
 
 // =========================================
-const rectangle = { 
-  name: 'Rectangle 1',
-  width: 10,
-  height: 10,
-  area: function () {
-    return this.width * this.height;
-  },
-};
+// const rectangle = { 
+//   name: 'Rectangle 1',
+//   width: 10,
+//   height: 10,
+//   area: function () {
+//     return this.width * this.height;
+//   },
+// };
 
-const rectangle2 = { 
-  name: 'Rectangle 2',
-  width: 30,
-  height: 20,
-  area: function () {
-    return this.width * this.height;
-  },
-};
+// const rectangle2 = { 
+//   name: 'Rectangle 2',
+//   width: 30,
+//   height: 20,
+//   area: function () {
+//     return this.width * this.height;
+//   },
+// };
 
 
-console.log(rectangle2.area());
+// console.log(rectangle2.area());
 
-console.log(this);
+// console.log(this);
+
+//==========================
+function Rectangle() {}
+
+const rect1 = new Rectangle();
+
+console.log(rect1);
