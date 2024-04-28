@@ -163,3 +163,8 @@ const rect3 = new Rectangle('Rectangle 3', 30, 30);
 console.log(rect2.name, rect3.name);
 console.log(rect2.area(), rect3.area());
 // console.log(rect1);
+
+// 1. A new empty object is created.
+// 2. The constructoer function is called with the arguments that we passed in.
+// 3. The `this` keyword is set to the new empty object.
+// 4. The new object is returned from the constructor function.
