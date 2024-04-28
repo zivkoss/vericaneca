@@ -171,3 +171,4 @@ console.log(rect2.area(), rect3.area());
 
 
 console.log(rect1.constructor);
+console.log(rect2 instanceof Rectangle);
