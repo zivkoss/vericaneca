@@ -128,6 +128,16 @@ const rectangle = {
   },
 };
 
-console.log(rectangle.area());
+const rectangle2 = { 
+  name: 'Rectangle 2',
+  width: 30,
+  height: 20,
+  area: function () {
+    return this.width * this.height;
+  },
+};
+
+
+console.log(rectangle2.area());
 
 console.log(this);
