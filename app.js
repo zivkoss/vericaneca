@@ -168,3 +168,6 @@ console.log(rect2.area(), rect3.area());
 // 2. The constructoer function is called with the arguments that we passed in.
 // 3. The `this` keyword is set to the new empty object.
 // 4. The new object is returned from the constructor function.
+
+
+console.log(rect1.constructor);
