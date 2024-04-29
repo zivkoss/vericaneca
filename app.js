@@ -143,6 +143,7 @@
 // console.log(this);
 
 //==========================
+// so that is how we can create constructor functions
 function Rectangle(name, width, height) {
   this.name = name;
   this.width = width;
