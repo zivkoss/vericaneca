@@ -201,4 +201,4 @@ for(let i = 1; i <= 5; i++) {
 
   console.log();
 }
->>>>>>> 5e62976 (add new code)
+>>>>>>> 5e62976 (add n
