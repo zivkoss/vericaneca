@@ -113,6 +113,7 @@
 //   this.height = height;
 // }
 
+<<<<<<< HEAD
 // const rect1 =  new Rectangle('Rectangle 1', 10, 10);
 
 // console.log(rect1);
@@ -173,3 +174,31 @@ console.log(rect2.area(), rect3.area());
 
 console.log(rect1.constructor);
 console.log(rect2 instanceof Rectangle);
+=======
+// const rectangle = { 
+//   name: 'Rectangle 1',
+//   width: 20,
+//   heigth: 10,
+//   area: function () {
+//     return this.width * this.heigth;
+//     // return width * heigth; // error
+
+//   },
+// };
+
+//    console.log(rectangle.area());
+
+
+// function run() {
+//    console.log(this);
+// }
+
+// run();
+
+for(let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= i; j++)
+      console.log("*");
+
+  console.log();
+}
+>>>>>>> 5e62976 (add new code)
