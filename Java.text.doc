@@ -67,6 +67,8 @@ public class HelloTester {
 }
 
 //================================
+
+//if============== 
 public class TestingIf {
     public static void  main (String [] args) {
         Scanner input = new Scanner(System.in);
@@ -79,3 +81,72 @@ public class TestingIf {
             System.out.println("Sorry, you are too young to register to our website");
     }
 }
+//==========================================================
+
+//if==if else
+
+import java.util.Scanner;
+
+public class IfElse {
+    public static void  main (String [] args) {
+        System.out.println("Please Enter Your Salary:");
+        Scanner input = new Scanner(System.in);
+        int salary = input.nextInt();
+        if (salary < 4000)
+            System.out.println("Your salary will not have any reductions");
+        else if (salary < 6000)
+            System.out.println("Ypu will get a tax of 10%");
+        else
+            System.out.println("You will get a 20% tax");
+        }
+
+    }
+
+    //===================================================
+
+    package javaExamples;
+
+import java.util.Scanner;
+
+public class IfElse {
+    public static void main(String[] args) {
+
+        int x = 5;
+        int y = 7;
+
+        if (x == 5 || y == 6
+//        if (x == 5 && y == 6)
+            System.out.println("Both values are correct");
+        else
+            System.out.println("The condition is not satisfied");
+
+    }
+
+}
+
+//===========================================
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("PLease enter a value between 1 & 5:");
+        int grade = input.nextInt();
+
+        switch (grade) {
+            case 1:
+                System.out.println("The value is one.");
+                break;
+            case 2:
+                System.out.println("The value is two.");
+                break;
+            case 3:
+                System.out.println("The value is three.");
+        }
+    }
+}
+
+//====================================
