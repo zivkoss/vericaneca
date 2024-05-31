@@ -9,3 +9,10 @@
  1601  git add .
  1602  git commit -m "sdlk"
  1603  git push origin master
+
+
+git pull --rebase origin master // resolve git fail push 
+
+rm -fr .git // delete locale git brach in terminal
+
+git remote add origin https://github.com/zivkoss/react-nextjs...git // new repository
