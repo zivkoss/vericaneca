@@ -150,3 +150,212 @@ public class Main {
 }
 
 //====================================
+
+//====================================
+
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+//        System.out.println("Please Enter the first Number:");
+        int x = 3;
+        int y = 5;
+        Scanner input = new Scanner(System.in);
+        System.out.println("PLease chosse your operation: 1 for addition, 2 for subtraction, & 3 for multiplication");
+        int choice = input.nextInt();
+
+        if (choice == 1)
+            System.out.println("The addition is: " + (x + y));
+        else if (choice == 2)
+            System.out.println("The subtraction is: " + (x - y));
+        else if (choice == 3)
+            System.out.println("The multiplication is: " + (x * y));
+        else
+            System.out.println("Wrong choice");
+
+    }
+
+}
+
+//==============================
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("Please Enter the first Number:");
+        int x = input.nextInt();
+
+        System.out.println("Please Enter the second Number:");
+        int y = input.nextInt();
+
+        System.out.println("PLease chosse your operation: 1 for addition, 2 for subtraction, & 3 for multiplication");
+        int choice = input.nextInt();
+
+        switch (choice) {
+            case 1:
+                System.out.println("The addition is: " + (x + y));
+                break;
+            case 2:
+                System.out.println("The subtraction is: " + (x - y));
+                break;
+            case 3:
+                System.out.println("The multiplication is: " + (x * y));
+                break;
+            default:
+                System.out.println("Wrong choice");
+                break;
+        }
+
+//        if (choice == 1)
+//            System.out.println("The addition is: " + (x + y));
+//        else if (choice == 2)
+//            System.out.println("The subtraction is: " + (x - y));
+//        else if (choice == 3)
+//            System.out.println("The multiplication is: " + (x * y));
+//        else
+//            System.out.println("Wrong choice");
+
+    }
+
+}
+
+//======================================
+
+//for loop
+
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 10; i++)
+        {
+            System.out.println("Value of i= " + i );
+        }
+
+    }
+
+}
+
+//=====================
+
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i <= 10; i++)
+        {
+            System.out.println(10-i );
+        }
+
+    }
+
+}
+
+//===============================================
+package javaExamples;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int count = 100;
+        for (int i = 0; i <= count; i++)
+        {
+            System.out.println(count-i );
+        }
+
+    }
+
+}
+
+//================================================
+
+package javaExamples;
+
+public class WhileLoop {
+
+    public static void main(String[] args) {
+
+        int x = 3;
+        while (x <= 5) {
+            System.out.println(x);
+            x++;
+        }
+
+    }
+
+}
+
+//=============================
+package javaExamples;
+
+public class WhileLoop {
+
+    public static void main(String[] args) {
+
+        int x = 3;
+        while (x <= 5) {
+            System.out.println(x);
+//            x++; whit this comment there will be infinite loop
+        }
+
+    }
+
+}
+
+//==========================================================
+
+package javaExamples;
+
+public class WhileLoop {
+
+    public static void main(String[] args) {
+
+        int x = 0;
+        while (x <= 10) {
+            System.out.println(x);
+            x++;
+        }
+
+    }
+
+}
+
+//=============================================================
+
+package javaExamples;
+
+public class WhileLoop {
+
+    public static void main(String[] args) {
+
+        int x = 10;
+        while (x >= 0) {
+            System.out.println(x);
+            x--;
+        }
+
+    }
+
+}
+
+//============================================================
