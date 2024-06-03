@@ -194,9 +194,29 @@
 
 // run();
 
-for(let i = 1; i <= 200; i++) {
-  for (let j = 1; j <= i; j++)
-      console.log("*");
+//================================
 
-  console.log("ГОСПОДЕ ИСУСЕ ХРИСТЕ СИНЕ БОЖИЈИ ПОМИЛУЈ МЕ ГРЕШНОГА");
+// for(let i = 1; i <= 200; i++) {
+//   for (let j = 1; j <= i; j++)
+//       console.log("*");
+
+//   console.log("ГОСПОДЕ ИСУСЕ ХРИСТЕ СИНЕ БОЖИЈИ ПОМИЛУЈ МЕ ГРЕШНОГА");
+// }
+
+
+const klikni = (dugme) => {
+  console.log(dugme.innerText);
 }
+
+let btns = document.querySelectorAll('button');
+
+btns.forEach(function (btn) {
+
+  // Event listener koji ceka za klik, za svaki btn.
+  btn.addEventListener("click", function (event) {
+    let clicked_btn = event.target;
+
+    console.log(clicked_btn.innerText);
+  });
+
+});
