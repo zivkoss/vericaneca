@@ -16,3 +16,6 @@ git pull --rebase origin master // resolve git fail push
 rm -fr .git // delete locale git brach in terminal
 
 git remote add origin https://github.com/zivkoss/react-nextjs...git // new repository
+
+git reset 989001eb47b681bbe897e5a87f6116a8105be63f // last commit
+
