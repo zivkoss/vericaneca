@@ -270,5 +270,4 @@ btns.forEach(function (btn) {
   });
 
 });
-
-//
+let link = document.querySelector('#link');
