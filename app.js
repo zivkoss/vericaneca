@@ -254,9 +254,9 @@ ${molitva}`
  
 
 
-const klikni = (dugme) => {
-  console.log(dugme.innerText);
-}
+// const klikni = (dugme) => {
+//   console.log(dugme.innerText);
+// }
 
 let btns = document.querySelectorAll('button');
 
@@ -271,3 +271,7 @@ btns.forEach(function (btn) {
 
 });
 let link = document.querySelector('#link');
+
+link.addEventListener("click", (event) => {
+
+});
