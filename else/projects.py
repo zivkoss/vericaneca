@@ -137,4 +137,7 @@ email_pasword = password
 email_receiver = '' 
 
 subject = "Dont forget to subscribe"
+body = """"
+
+"""
 
