@@ -120,11 +120,16 @@
 
 # ==================================
 
-days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon1"]
+# days=["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun", "Mon1"]
 
-for d in days:
-    if(d=="Thu"):break
-    print(d) 
+# for d in days:
+#     if(d=="Thu"):break
+#     print(d) 
 
-    # //
+#     # //
+
+from email.message import EmailMessage
+from app2 import password
+
+email_sender = 'codewithtomi.com'
 
