@@ -132,4 +132,7 @@ from email.message import EmailMessage
 from app2 import password
 
 email_sender = 'codewithtomi.com'
+email_pasword = password
+
+email_receiver = '' 
 
