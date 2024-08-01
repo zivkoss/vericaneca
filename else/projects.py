@@ -138,6 +138,6 @@ email_receiver = ''
 
 subject = "Dont forget to subscribe"
 body = """"
-
+When you watch a video , please hit subscribe
 """
 
