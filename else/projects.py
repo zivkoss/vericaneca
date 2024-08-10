@@ -131,7 +131,7 @@
 from email.message import EmailMessage
 from app2 import password
 import ssl
-import smtplib
+# import smtplib
 
 email_sender = 'codewithtomi.com'
 email_pasword = password
