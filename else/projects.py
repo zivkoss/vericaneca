@@ -129,11 +129,11 @@
 #     # //
 
 from email.message import EmailMessage
-from app2 import password
+from p import password
 import ssl
 import smtplib
 
-email_sender = 'codewithtomi.com'
+email_sender = 'codewithtomi@gmail.com'
 email_pasword = password
 
 email_receiver = '' 
