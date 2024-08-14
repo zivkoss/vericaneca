@@ -56,7 +56,11 @@
 
 name  = "Nemanja"
 
-age = "31"
+age = 31
+# age = "31"
+
+
+actual_age = 31.97
 
 print(name)
 print(age)
