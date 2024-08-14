@@ -68,3 +68,5 @@ print(age)
 print(type(name))
 
 print(type(age))
+
+print(type(actual_age))
