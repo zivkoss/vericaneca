@@ -35,3 +35,7 @@ sleep(1)
 print("""Јер је Твоје Царство, и сила, и слава Оца и Сина и Светога Духа, сада и увек и у векове векова. """)
 sleep(2)
 print("Амин.")
+
+
+
+print("I am Iron Man. \n" + "No, Iam Tony Stark .\n" + "No, I am Poppy.")
