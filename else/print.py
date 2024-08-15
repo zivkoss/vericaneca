@@ -54,19 +54,19 @@
 
 # print("Слава Теби Боже наш, слава Теби.\n" * 10)
 
-name  = "Nemanja"
+# name  = "Nemanja"
 
-age = 31
-# age = "31"
+# age = 31
+# # age = "31"
+# actual_age = 31.97
 
+# # print(name)
+# # print(age)
 
-actual_age = 31.97
+# # print(type(name))
 
-print(name)
-print(age)
+# # print(type(age))
 
-print(type(name))
+# # print(type(actual_age))
 
-print(type(age))
-
-print(type(actual_age))
+# print(5 + 7)
