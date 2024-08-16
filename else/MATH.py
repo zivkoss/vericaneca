@@ -10,4 +10,14 @@ print(name + ", what would you like from our menu today? Here is what we are ser
 
 order = input()
 
+price = 8
+
+quantity = input("How many coffees would you like?\n")
+
+total = price * int(quantity)
+
+print("Thank you. Your total is: " + total) 
+
+print
+
 print("Sounds good " + name + ", we'll have that " + order + " ready for you in a moment.")
