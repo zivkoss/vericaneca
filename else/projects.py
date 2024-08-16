@@ -129,7 +129,7 @@
 #     # //
 
 from email.message import EmailMessage
-from p import password
+from print import password
 import ssl
 import smtplib
 
