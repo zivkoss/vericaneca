@@ -18,6 +18,5 @@ total = price * int(quantity)
 
 print("Thank you. Your total is: $" + str(total)) 
 
-print
 
 print("Sounds good " + name + ", we'll have that " + order + " ready for you in a moment.")
