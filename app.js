@@ -258,23 +258,23 @@ ${molitva}`
 //   console.log(dugme.innerText);
 // }
 
-let btns = document.querySelectorAll('button');
+// let btns = document.querySelectorAll('button');
 
-btns.forEach(function (btn) {
+// btns.forEach(function (btn) {
 
-  // Event listener koji ceka za klik, za svaki btn.
-  btn.addEventListener("click", function (event) {
-    let clicked_btn = event.target;
+//   // Event listener koji ceka za klik, za svaki btn.
+//   btn.addEventListener("click", function (event) {
+//     let clicked_btn = event.target;
 
-    console.log(clicked_btn.innerText);
-  });
+//     console.log(clicked_btn.innerText);
+//   });
 
-});
+// });
 
-let link = document.querySelector('#link');
+// let link = document.querySelector('#link');
 
-link.addEventListener("click", (event) => {
-    event.preventDefault();  
+// link.addEventListener("click", (event) => {
+//     event.preventDefault();  
 
-    console.log(event.target);
-});
+//     console.log(event.target);
+// });
