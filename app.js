@@ -269,7 +269,7 @@ ${molitva}`
 //     console.log(clicked_btn.innerText);
 //   });
 
-// });
+// });..
 
 // let link = document.querySelector('#link');
 
