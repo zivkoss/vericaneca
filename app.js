@@ -156,14 +156,14 @@
 
 //================================
 
-for(let i = 1; i <= 20; i++) {
+for(let i = 1; i <= 100; i++) {
   for (let j = 1; j <= i; j++)
       console.log("*");
 
   console.log("ГОСПОДЕ ИСУСЕ ХРИСТЕ СИНЕ БОЖИЈИ ПОМИЛУЈ МЕ ГРЕШНОГА");
 }
 
-// =============
+// ===============
 
 for (let molitva = 1; molitva <= 10; molitva++) {
   console.log(
@@ -278,3 +278,8 @@ link.addEventListener("click", (event) => {
 
     console.log(event.target);
 });
+
+
+function bratDimitrije (prelazakNaViolu) {
+   
+}
