@@ -12,7 +12,7 @@ CREATE TABLE `offices` (
   `postalCode` varchar(15) NOT NULL,
   `territory` varchar(10) NOT NULL,
   PRIMARY KEY (`officeCode`)
-  );
+);
 
 
 
