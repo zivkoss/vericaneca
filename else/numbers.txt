@@ -1,21 +1,23 @@
 ONE //
 
 
-CREATE TABLE `offices` (
-  `officeCode` varchar(10) NOT NULL,
-  `city` varchar(50) NOT NULL,
-  `phone` varchar(50) NOT NULL,
-  `addressLine1` varchar(50) NOT NULL,
-  `addressLine2` varchar(50),
-  `state` varchar(50),
-  `country` varchar(50) NOT NULL,
-  `postalCode` varchar(15) NOT NULL,
-  `territory` varchar(10) NOT NULL,
-  PRIMARY KEY (`officeCode`)
-);
+0
 
 
 
   https://www.youtube.com/watch?v=-fW2X7fh7Yg
 
   1:00:47
+
+
+  INSERT INTO `offices`
+
+  (`officeCode`,`city`,`phone`,`addressLine1`,`addressLine2`,`state`,`country`,`postalCode`,`territory`) VALUES
+
+  (`1`,`San Francisco`,`+1 650 219 4782`,`100 Market Street`,`Suite 300`,`CA`,`USA`,`94080`,`NA`),
+
+  (`2`,`Boston`,`+1 215 837 0825`,`155`)
+
+  
+
+
