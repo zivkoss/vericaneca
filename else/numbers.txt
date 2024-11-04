@@ -35,6 +35,20 @@ ONE //
   INSERT INTO `employees` VALUES
   (1002, 'Murphy', 'Diane', 'x5800','dmurphy@classicmodelcars.com', '1', NULL, 'President');
 
+  CREATE TABLE `employees` (
+    `employeeNumber` int(11) NOT NULL,
+    `lastName` varchar(50) NOT NULL,
+    `firstName` varchar(50) NOT NULL,
+    `extension` varchar(10) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    `officeCode` varchar(10) NOT NULL,
+    `reportsTo` int(11) DEFAULT NULL,
+    `jobTitle` varchar(50) NOT NULL,
+    PRIMARY KEY (`employeeNumber`,
+    FOREIGN KEY (`reportsTo`) REFERENCES `employees` (`employeeNumber`),
+    FOREIGN KEY (`officeCode`) REFERENCES `offices` (`officeCode`)
+    );
+
 
 
 
