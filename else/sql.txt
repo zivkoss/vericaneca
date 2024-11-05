@@ -1,3 +1,18 @@
+CREATE TABLE `productlines` (
+   `productLine` varchar(50) NOT NULL,
+   `textDescription` varchar(4000) DEFAULT NULL,
+   `htmlDescription` mediumtext,
+   `image` mediumlob,
+   PRIMARY KEY (`productLine`)
+  );
+
+
+
+
+
+//================
+
+
 CREATE TABLE IF NOT EXISTS `customers` (
   `customerNumber` INT(11) NOT NULL,
   `customerName` VARCHAR(50) NOT NULL,
@@ -19,21 +34,3 @@ CREATE TABLE IF NOT EXISTS `customers` (
 
 //=======================================
 
-CREATE TABLE IF NOT EXISTS `ClassicModels`.`Customers` (
-  `customerNumber` INT(11) NOT NULL,
-  `customerName` VARCHAR(50) NOT NULL,
-  `contactLastName` VARCHAR(50) NOT NULL,
-  `contactFirstName` VARCHAR(50) NOT NULL,
-  `phone` VARCHAR(50) NOT NULL,
-  `addressLine1` VARCHAR(50) NOT NULL,
-  `addressLine2` VARCHAR(50) NULL DEFAULT NULL,
-  `city` VARCHAR(50) NOT NULL,
-  `state` VARCHAR(50) NULL DEFAULT NULL,
-  `postalCode` VARCHAR(15) NULL DEFAULT NULL,
-  `country` VARCHAR(50) NOT NULL,
-  `salesRepEmployeeNumber` INT(11) NULL,
-  `creditLimit` DOUBLE NULL DEFAULT NULL,
-  `customerLocation` POINT NOT NULL,
-  PRIMARY KEY (`customerNumber`),
-  FOREIGN KEY (`salesRepEmployeeNumber`) REFERENCES `ClassicModels`.`Employees` (`employeeNumber`));
- 
