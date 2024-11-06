@@ -11,14 +11,13 @@ CREATE TABLE `productlines` (
 -- -----------------------------------------------------
 -- Table `ClassicModels`.`ProductLines`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `ClassicModels`.`ProductLines` (
-  `productLine` VARCHAR(50) NOT NULL,
-  `textDescription` VARCHAR(4000) NULL DEFAULT NULL,
+CREATE TABLE `productlines` (
+  `productLine` varchar(50) NOT NULL,
+  `textDescription` varchar(4000) NULL DEFAULT NULL,
   `htmlDescription` MEDIUMTEXT NULL DEFAULT NULL,
-  `image` MEDIUMBLOB NULL DEFAULT NULL,
-  PRIMARY KEY (`productLine`))
-ENGINE = InnoDB
-DEFAULT CHARACTER SET = utf8mb3;
+  `image` mediumblob,
+  PRIMARY KEY (`productLine`)
+);
 
 
 
