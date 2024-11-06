@@ -1,3 +1,10 @@
+
+select customerNumber, SUM(amount) as totalAmount
+    from payments 
+    where paymentDate<"2004-10-28" 
+    group by customerNumber;
+//==========================================
+
 select customerNumber, COUNT(*) as numberOfPayments
     from payments 
     where paymentDate<"2004-10-28" 
