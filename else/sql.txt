@@ -1,8 +1,12 @@
 
-select customerNumber, SUM(amount) as totalAmount
-    from payments 
-    where paymentDate<"2004-10-28" 
-    group by customerNumber;
+
+
+select E.employeeNumber, 
+	E.firstName, 
+    E.lastName, 
+    M.employeeNumber as managerEmployeeNumber, 
+    CONCAT(M.firstName, " ", M.lastName) as managerName
+    from employees E LEFT JOIN employees M ON E.reportsTo=M.employeeNumber;
 //==========================================
 
 select customerNumber, COUNT(*) as numberOfPayments
