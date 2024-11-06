@@ -4,9 +4,10 @@ CREATE TABLE `products` (
   `productLine` varchar(50) NOT NULL,
   `productScale` varchar(10) NOT NULL,
   `productVendor` varchar(50) NOT NULL,
-  `productDescription` TEXT NOT NULL,
+  `productDescription` text NOT NULL,
   `quantityInStock` smalint(6) NOT NULL,
   `buyPrice` decimal(10,2) NOT NULL,
+  `MSRR` decimal(10,2) NOT NULL,
   PRIMARY KEY (`productCode`),
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`productLine`) REFERENCES `productlines` (`productLine`)
 );
