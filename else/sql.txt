@@ -8,7 +8,7 @@ CREATE TABLE `products` (
   `quantityInStock` smalint(6) NOT NULL,
   `buyPrice` decimal(10,2) NOT NULL,
   PRIMARY KEY (`productCode`),
-  CONSTRAINT `fk_Products_ProductLines` FOREIGN KEY (`productLine`) REFERENCES `productlines` (`productLine`)
+  CONSTRAINT `products_ibfk_1` FOREIGN KEY (`productLine`) REFERENCES `productlines` (`productLine`)
 );
 
 
