@@ -1,3 +1,33 @@
+CREATE TABLE `products` (
+  `productCode` (15) NOT NULL,
+  `productName` VARCHAR(70) NOT NULL,
+  `productScale` VARCHAR(10) NOT NULL,
+  `productVendor` VARCHAR(50) NOT NULL,
+  `productDescription` TEXT NOT NULL,
+  `quantityInStock` SMALLINT(6) NOT NULL,
+  `buyPrice` DOUBLE NOT NULL,
+  `MSRP` DOUBLE NOT NULL,
+  `productLine` VARCHAR(50) NULL,
+  PRIMARY KEY (`productCode`),
+  INDEX `fk_Products_ProductLines_idx` (`productLine` ASC),
+  CONSTRAINT `fk_Products_ProductLines`
+    FOREIGN KEY (`productLine`)
+    REFERENCES `ClassicModels`.`ProductLines` (`productLine`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+
+
+
+//========================
+
+
+
+
+
 CREATE TABLE `productlines` (
    `productLine` varchar(50) NOT NULL,
    `textDescription` varchar(4000) DEFAULT NULL,
