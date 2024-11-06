@@ -1,4 +1,13 @@
+select customerNumber, COUNT(*) as numberOfPayments
+    from payments 
+    where paymentDate<"2004-10-28" 
+    group by customerNumber;
 
+
+//===========================================
+
+select COUNT(*) from payments where paymentDate<"2004-10-28" group by customerNumber;
+//========
 
 mysql> UPDATE employees SET hiredOn="2020-12-01" WHERE jobTitle="Sales Rep" and officeCode="1";
 
